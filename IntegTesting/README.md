@@ -7,8 +7,7 @@ and make changes in the following files:
 ## `ControlLoop.adb`
 replace
 
-      procedure Init;
-      procedure Tick;
+```procedure Init; procedure Tick;```
       
 with
 
@@ -55,9 +54,14 @@ as needed
     `in out` parameter
 
   - Suppress all printing to console from your ControlLoop and BrakeController
+  
+  
+## Compiling
+compile with 
 
-  -  gnatmake CLTester.adb
-     ./cltester
+	gnatmake CLTester.adb
+    ./cltester
+
 
 
 ## Bug Checking
